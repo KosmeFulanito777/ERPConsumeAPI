@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace ERPConsumeAPI.Views
+{
+    /// <summary>
+    /// Interaction logic for PrincipalView.xaml
+    /// </summary>
+    public partial class PrincipalView : Window
+    {
+        public PrincipalView()
+        {
+            InitializeComponent();
+        }
+
+        private void BtnClientes_Click(object sender, RoutedEventArgs e)
+        {
+            new ClientesView().Show();
+        }
+
+        private void BtnFacturas_Click(object sender, RoutedEventArgs e)
+        {
+            new FacturasView().Show();
+        }
+
+        private void BtnPagos_Click(object sender, RoutedEventArgs e)
+        {
+            new PagosView().Show();
+        }
+    }
+}
